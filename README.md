@@ -3,7 +3,6 @@
 TITLE: SOFTWARE II - Scheduling Application
 
 AUTHOR: Diego Rodriguez
-Email: drod409@ewgu.edu
 Application Version: 1.0
 Submission Date: 04/09/2023
 
@@ -35,7 +34,3 @@ HOW TO USE PROGRAM:
 When the program starts the user is presented with a login screen. If the user does not enter the correct username/password
 the program will not grant entry. Once the user enters the correct information, they are now able to create and modify customers,
 as well as appointments.
-
-Javadoc file attached in root file.
-LAMBDA #1 located in src/wgu/dao/AppointmentDAO.java line 264.
-LAMBDA #2 located in src/wgu/dao/AppointmentDAO.java line 354.
