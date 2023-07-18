@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #3F3F3F;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.controller.LoginScreenController">
+    <children>
+        <Label fx:id="usernameLabel" layoutX="351.0" layoutY="242.0" prefHeight="20.0" prefWidth="78.0" text="Username:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="passwordLabel" layoutX="351.0" layoutY="282.0" prefHeight="20.0" prefWidth="78.0" text="Password:" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="usernameText" layoutX="436.0" layoutY="239.0">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="passwordText" layoutX="436.0" layoutY="279.0">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </TextField>
+        <Button fx:id="loginButton" layoutX="351.0" layoutY="330.0" mnemonicParsing="false" onAction="#onActionLogin" prefHeight="30.0" prefWidth="247.4" style="-fx-background-color: navy;" text="Login" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Label fx:id="loggedOutLabel" layoutX="14.0" layoutY="555.0" text="Logged Out" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="zoneIdLabel" layoutX="14.0" layoutY="578.0" text="ZoneID:" textFill="#00ff4d">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="invalidUserLabel" layoutX="348.0" layoutY="397.0" opacity="0.0" text="Invalid username or password!" textFill="RED">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

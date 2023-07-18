@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #3F3F3F;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wgu.controller.AddAppointmentController">
+   <children>
+      <GridPane layoutX="33.0" layoutY="76.0" prefHeight="467.0" prefWidth="872.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.20003662109374" minWidth="10.0" prefWidth="146.6000183105469" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="361.79998779296875" minWidth="10.0" prefWidth="167.5999877929687" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="480.4000122070313" minWidth="10.0" prefWidth="480.4000122070313" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Customer ID:" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="User ID:" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Title:" textFill="WHITE" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Description:" textFill="WHITE" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="20.0" prefWidth="70.0" text="Location:" textFill="WHITE" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Contact:" textFill="WHITE" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Type:" textFill="WHITE" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Start Date:" textFill="WHITE" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="End Date:" textFill="WHITE" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="customerIdText" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="userIdText" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="titleText" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="descriptionText" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="contactComboBox" onAction="#onActionContactCombo" prefHeight="26.0" prefWidth="206.4" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <DatePicker fx:id="startDatePicker" prefHeight="26.0" prefWidth="206.4" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <DatePicker fx:id="endDatePicker" prefHeight="26.0" prefWidth="206.4" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <ComboBox fx:id="startTimeCombo" prefWidth="100.0" translateX="50.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets left="75.0" />
+               </GridPane.margin>
+            </ComboBox>
+            <Label GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Label text="Start Time:" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="End Time:" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </Label>
+            <ComboBox fx:id="endTimeCombo" prefWidth="100.0" translateX="50.0" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <GridPane.margin>
+                  <Insets left="75.0" />
+               </GridPane.margin>
+            </ComboBox>
+            <Label text="Appointment ID:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="appointmentIdText" disable="true" GridPane.columnIndex="1" />
+            <TextField fx:id="typeText" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="locationText" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Label fx:id="currentUserLabel" layoutX="14.0" layoutY="555.0" text="User: " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="zoneIdLabel" layoutX="14.0" layoutY="578.0" text="ZoneID:" textFill="#00ff4d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="32.0" text="Add Appointment" textFill="YELLOW">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveButton" layoutX="805.0" layoutY="561.0" mnemonicParsing="false" onAction="#onActionSave" prefHeight="25.6" prefWidth="51.2" text="Save">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="870.0" layoutY="561.0" mnemonicParsing="false" onAction="#onActionCancel" text="Cancel">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="nullErrorLabel" layoutX="512.0" layoutY="255.0" opacity="0.0" text="Please ensure all values are entered!" textFill="RED">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="overlapAppointmentLabel" layoutX="512.0" layoutY="255.0" opacity="0.0" text="Appointment overlaps with existing appointment!" textFill="RED">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="appointmentESTHoursLabel" layoutX="512.0" layoutY="255.0" opacity="0.0" prefHeight="27.0" prefWidth="446.0" text="Appointment is outside of business hours!" textFill="RED">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="appointmentDateOrTimeErrorLabel" layoutX="512.0" layoutY="255.0" opacity="0.0" text="Please make sure your dates/times are correct!" textFill="RED">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
