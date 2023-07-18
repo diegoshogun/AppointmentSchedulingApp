@@ -1,7 +1,5 @@
 # AppointmentSchedulingApp
 
-TITLE: SOFTWARE II - Scheduling Application
-
 AUTHOR: Diego Rodriguez
 Application Version: 1.0
 Submission Date: 04/09/2023
